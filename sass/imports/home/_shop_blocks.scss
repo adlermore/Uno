@@ -1,0 +1,82 @@
+
+.shop_list {
+  @extend %standardList;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 60px;
+  .shop_inner {
+    @include overHidden();
+    img {
+      @extend %coverLayer;
+      object-fit: cover;
+      @extend %all300;
+    }
+  }
+  li{
+    padding-bottom: 10px;
+  }
+  .block_inner {
+    position: relative;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    color: $black;
+    @extend %all300;
+  }
+  .shop_block{
+    background-color: $pinkD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    max-height: 160px;
+    max-width: 160px;
+    width: 100%;
+    height: 100%;
+  }
+  .more_button{
+    margin-top: 0;
+   @extend %standardButton;
+  }
+}
+@media #{$until991} {
+  .news_section {
+    padding: 40px 0;
+    .section_title {
+      margin-bottom: 20px;
+    }
+  }
+  .shop_list {
+    .block_inner {
+      padding: 20px;
+    }
+  }
+}
+@media #{$until767} {
+  .shop_list {
+    .block_inner {
+      height: 280px;
+    }
+  }
+}
+@media #{$until575}{
+  .shop_list{
+    li{
+      margin-bottom: 15px;
+    }
+  }
+}
+@media #{$until359} {
+  .shop_list {
+    .block_inner {
+      padding: 15px 10px;
+    }
+  }
+}

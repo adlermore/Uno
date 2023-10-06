@@ -1,0 +1,382 @@
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: 100%;
+  margin-top: -96px;
+  padding-top: 96px;
+  display: flex;
+  position: relative;
+}
+
+
+.map_block {
+  flex: 1;
+  height: 100%;
+  position: relative;
+
+  #map-canvas {
+    width: 100%;
+    height: 100%;
+
+    .ymaps-2-1-76-controls__control {
+      right: 50px !important;
+      left: auto !important;
+    }
+  }
+}
+
+.gm-style-iw {
+  text-align: center;
+}
+
+.iw_content {
+  line-height: 23px;
+  color: #000000;
+  font-family: $bold;
+  font-size: 140%;
+  letter-spacing: 0;
+}
+
+.ymaps-2-1-76-balloon {
+  box-shadow: none !important;
+}
+
+.ymaps-2-1-76-balloon__layout {
+  border-radius: 5px !important;
+  border: 1px solid #DCDCDC !important;
+}
+
+.ymaps-2-1-76-balloon__tail {
+  width: 8px !important;
+  height: 14px !important;
+  border-radius: 7px !important;
+}
+
+.iw_branch_name {
+  font-family: $bold;
+}
+
+.iw_branch_address {
+  margin-top: 15px;
+}
+
+.iw_branch_phone {
+  margin-top: 8px;
+}
+
+.ymaps-2-1-76-balloon__close {
+  display: none !important;
+}
+
+.ymaps-2-1-76-balloon__content {
+  margin-right: inherit !important;
+  padding: 5px 20px 0 20px !important;
+}
+
+.branches_container {
+  width: 510px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .list_container {
+    height: 100%;
+    .page_title {
+      margin: 30px 0;
+      padding-bottom: 0;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    .search_block {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    .search_form {
+      padding: 0 14px;
+      width: 100%;
+      display: flex;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: $white;
+      margin-bottom: 15px;
+      font-family: $regular;
+
+      .search_input {
+        flex: 1;
+        border: none;
+        font-size: 140%;
+        line-height: 20px;
+        background: transparent;
+        padding: 0;
+        color: $black;
+        height: 40px;
+        letter-spacing: 0;
+
+        &::placeholder {
+          color: $black;
+        }
+      }
+
+      .icon_search {
+        border: none;
+        padding: 0;
+        background: transparent;
+        font-size: 140%;
+        color: rgba($black, 0.3);
+      }
+    }
+    .container_inner {
+      height: 100%;
+      .icon_mail {
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 360px;
+        bottom: 40px;
+        z-index: 1;
+        @include animStyle(background 0.3s);
+        &:before {
+          font-size: 1.7rem;
+        }
+
+        &:hover {
+          background: $black33;
+        }
+      }
+
+      .block_all {
+        max-height: 80%;
+        height: 100%;
+        .menu_store {
+          ul {
+            @extend %standardList;
+
+            > li {
+              padding-right: 6px;
+              margin-right: 6px;
+              border-bottom: 1px solid $grayE6;
+
+              &.branches_opened {
+                .branch_region:after {
+                  @include transStyle(rotate(90deg));
+                }
+              }
+
+              .active {
+                background: $white;
+              }
+
+              a {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0 19px 0;
+                @extend %iconElement;
+                @extend %back300;
+                padding-left: 70px;
+                padding-right: 120px;
+
+                .city_block {
+                  color: $black;
+                  font-family: $bold;
+                  font-size: 140%;
+                  letter-spacing: 0;
+                  line-height: 21px;
+                  @include animStyle(all 0.5s);
+                  &:before {
+                    padding-right: 10px;
+                  }
+                }
+
+                .street_block {
+                  color: $black;
+                  font-family: $regular;
+                  font-size: 140%;
+                  letter-spacing: 0;
+                  line-height: 21px;
+                  padding-top: 10px;
+                  padding-left: 25px;
+                  @include animStyle(all 0.5s);
+                }
+
+                .week_days {
+                  padding-top: 10px;
+                  color: $grayB0;
+                  font-family: $regular;
+                  font-size: 120%;
+                  letter-spacing: 0;
+                  line-height: 18px;
+                  padding-left: 25px;
+                  @include animStyle(color 0.5s);
+                }
+
+              }
+
+              .clicked {
+                .week_days,
+                .street_block,
+                .city_block {
+                  color: $grayC8;
+                  @include animStyle(color 0.5s);
+                }
+              }
+              
+
+              &:hover {
+                .week_days,
+                .street_block,
+                .city_block {
+                  color: $grayC8;
+                }
+              }
+
+              &:last-child {
+                padding-bottom: 30px
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .scroll-y {
+    div {
+      position: absolute;
+      width: 4px;
+      display: block;
+      top: 0;
+      bottom: 0;
+      border-radius: 0;
+      right: 1px;
+      &.scroll-element_outer {
+        top: 1px;
+        bottom: 1px;
+      }
+      &.scroll-element_track {
+        background: $creamyF2;
+        z-index: 5;
+      }
+      &.scroll-bar {
+        cursor: pointer;
+        background: $black;
+        z-index: 6;
+        border-radius: 3px;
+        @extend %back300;
+      }
+    }
+    .scroll-wrapper > .scroll-content{
+      width: auto !important;
+    }
+  }
+}
+
+@media #{$until1440}{
+  .branches_container {
+    width: 450px;
+    .list_container {
+      .page_title{
+        padding-left: 40px;
+        
+      }
+      .search_block{
+        padding-left: 40px;
+      }
+      .container_inner {
+        .block_all {
+          .menu_store ul > li a{
+            padding: 20px 40px;
+          }
+        }
+      }
+    } 
+  } 
+}
+@media #{$until1199} {
+  .branches_container {
+    .list_container {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media #{$until991} {
+  body{
+    overflow: visible ;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  .ymaps-2-1-76-balloon_layout_panel {
+    display: none;
+  }
+  .branches_container {
+    width: 100%;
+    order: 2;
+    overflow: visible;
+
+    .list_container {
+      .container_inner {
+        height: auto;
+
+        .block_all .menu_store ul > {
+          li {
+            a {
+              padding-left: 0;
+              padding-right: 0;
+              .icon_pin {
+                &:before {
+                  padding-right: 10px;
+                  float: right;
+                }
+              }
+              .week_days,
+              .street_block{
+                padding-left: 0;
+              }
+            }
+
+            &:last-child {
+              padding-bottom: 30px;
+            }
+          }
+        }
+        .icon_mail{
+          left: auto;
+          right: 50px;
+          bottom: 50px;
+        }
+      }
+     
+      .search_block {
+        padding-left: 0;
+        padding-right: 25px;
+      }
+
+      .page_title {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .map_block {
+    order: 1;
+    height: 55vh;
+  }
+}
+@media #{$until575}{
+  .branches_container .list_container .container_inner .icon_mail {
+    left: auto;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+

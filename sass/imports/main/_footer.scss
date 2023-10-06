@@ -1,0 +1,187 @@
+.footer {
+  opacity: 1;
+  position: relative;
+  background: $black;
+  padding: 60px 0;
+  color: $white;
+  margin-top: 60px;
+  font-family: $regular;
+  .footer_inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_left_block{
+    width: 100%;
+  }
+  .block_title{
+    font-size: 180%;
+    line-height: 22px;
+    letter-spacing: 3px;
+    font-family: $black_;
+    margin-bottom: 10px;
+  }
+  .block_description{
+    font-size: 140%;
+    line-height: 19px;
+    color: $gray97;
+  }
+  .form_block{
+    position: relative;
+    max-width: 630px;
+    margin-top: 30px;
+  }
+  .validate_button{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .icon_mail{
+    position: absolute;
+    right: 1px;
+    top: 16px;
+    cursor: pointer;
+    @include animStyle(opacity 0.3s);
+    @extend %opacityHover07;
+    &:before{
+      font-size: 160%;
+      line-height: 11px;
+    }
+  }
+  .field_block{
+    position: relative;
+    input{
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $gray97;
+      max-width: 630px;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 140%;
+      line-height: 21px;
+      color: $gray97;
+      padding-right: 40px;
+    }
+  }
+  .share_block{
+    margin-top: 110px;
+    display: flex;
+    .share_button{
+      width: 50px;
+      height: 50px;
+      background-color: transparent !important;
+      border-radius: 50% !important;
+      border: 1px solid rgba($white ,0.3);
+      margin-right: 20px;
+      font-size: 140%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 0;
+      color: $white;
+      @include animStyle(all 0.2s);
+      opacity: 1;
+      &:hover{
+        opacity: 0.6;
+        top: -5px;
+      }
+    }
+  }
+  .footer_contacts_block{
+    max-width: 280px;
+    font-size: 140%;
+    line-height: 21px;
+    margin-top: 20px;
+  }
+  .info_mail{
+    margin-top: 30px;
+    font-size: 420%;
+    line-height: 48px;
+    font-family: $light;
+  }
+  .footer_right_block{
+    text-align: right;
+    ul{
+      padding: 0;
+      list-style: none;
+    }
+    a{
+      color: $white;
+      @include animStyle(opacity 0.3s);
+      opacity: 1;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+  .large_menu{
+    font-size: 420%;
+    line-height: 48px;
+    font-family: $light;
+  }
+  .small_menu{
+    margin-top: 20px;
+    font-size: 120%;
+    line-height: 19px;
+    font-family: $black_;
+    li{
+      padding-bottom:5px;
+    }
+  }
+  .footer_bottom{
+    margin-top: 60px;
+    color: $gray97;
+    font-size: 120%;
+    line-height: 19px;
+    a{
+      color: $gray97;
+    }
+  }
+  @media #{$until1199}{
+    .footer_left_block{
+      padding-right: 50px;
+    }
+    .form_block{
+      max-width: 390px;
+    }
+  }
+  @media #{$until991}{
+    .large_menu{
+      font-size: 340%;
+      line-height: 40px;
+    }
+  }
+  @media #{$until767}{
+    .footer_inner{
+      flex-direction: column;
+    }
+    .footer_right_block{
+      display: none;
+      text-align: left;
+    }
+    .info_mail{
+      display: none;
+    }
+    .share_block{
+      margin-top: 40px;
+    }
+  }
+  @media #{$until575}{
+    .footer_left_block{
+      padding: 0;
+    }
+    .footer_contacts_block{
+      display: none;
+    }
+    .footer_right_block{
+      display: block;
+    }
+    .footer_menu{
+      display: none;
+    }
+    .footer_bottom{
+      margin-top: 40px;
+    }
+  }
+}

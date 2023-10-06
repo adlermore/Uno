@@ -1,0 +1,180 @@
+.privacyPolicy_page .profile_list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.privacyPolicy_page .phone_block:not(.clickable):before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.privacyPolicy_page {
+  padding-top: 30px;
+}
+.privacyPolicy_page .profile_list {
+  font-family: "mardoto-regular", "roboto-regular";
+}
+.privacyPolicy_page .profile_list li {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+}
+.privacyPolicy_page .profile_list li.active a {
+  font-family: "mardoto-black", "roboto-black";
+  color: #000000;
+}
+.privacyPolicy_page .profile_list a {
+  font-size: 140%;
+  line-height: 24px;
+  color: #000000;
+}
+.privacyPolicy_page .profile_list a:hover {
+  color: #D8D8D8;
+  -o-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.privacyPolicy_page .profile_list a.special {
+  color: #A90000;
+  font-family: "mardoto-black", "roboto-black";
+}
+.privacyPolicy_page .info_title {
+  color: #000000;
+  font-family: "mardoto-bold", "roboto-bold";
+  font-size: 120%;
+  line-height: 14px;
+  padding-bottom: 20px;
+  word-break: break-word;
+}
+.privacyPolicy_page .description_info {
+  color: #000000;
+  font-family: "mardoto-regular", "roboto-regular";
+  font-size: 140%;
+  line-height: 21px;
+  padding-bottom: 40px;
+  word-break: break-word;
+}
+.privacyPolicy_page .list_title {
+  color: #000000;
+  font-family: "mardoto-bold", "roboto-bold";
+  font-size: 120%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 14px;
+  padding-bottom: 10px;
+}
+.privacyPolicy_page .list_description {
+  color: #000000;
+  font-family: "mardoto-regular", "roboto-regular";
+  font-size: 120%;
+  line-height: 18px;
+  padding-bottom: 30px;
+  word-break: break-word;
+}
+.privacyPolicy_page .phone_block {
+  position: relative;
+}
+.privacyPolicy_page .phone_block:not(.clickable):before {
+  z-index: 1;
+  content: "";
+}
+.privacyPolicy_page .phone_block a {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: "mardoto-bold", "roboto-bold";
+  font-size: 140%;
+  line-height: 21px;
+}
+.privacyPolicy_page .phone_block a:before {
+  padding-bottom: 10px;
+  display: block;
+}
+.privacyPolicy_page .working_house {
+  padding-top: 5px;
+  color: #A2A2A2;
+  font-family: "mardoto-regular", "roboto-regular";
+  font-size: 120%;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding-bottom: 30px;
+  word-break: break-word;
+}
+.privacyPolicy_page .message_btn {
+  color: #000000;
+  font-family: "mardoto-bold", "roboto-bold";
+  font-size: 110%;
+  line-height: 13px;
+  text-transform: uppercase;
+  position: relative;
+  word-break: break-word;
+  letter-spacing: 1.94px;
+}
+.privacyPolicy_page .message_btn:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #000000;
+}
+.privacyPolicy_page .message_btn:hover {
+  color: #D8D8D8;
+  -o-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+@media (max-width: 991px) {
+  .privacyPolicy_page .profile_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    margin-bottom: 30px;
+  }
+  .privacyPolicy_page .profile_list li {
+    white-space: nowrap;
+    height: 30px;
+  }
+  .privacyPolicy_page .profile_list li:not(:last-child) {
+    margin-right: 20px;
+  }
+  .privacyPolicy_page .profile_list a {
+    font-size: 140%;
+    line-height: 18px;
+  }
+  .privacyPolicy_page .contacts_list {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .privacyPolicy_page .profile_list {
+    margin-bottom: 0;
+  }
+  .privacyPolicy_page .contacts_list {
+    display: none;
+  }
+  .privacyPolicy_page .info_title {
+    font-size: 140%;
+  }
+  .privacyPolicy_page .info_block {
+    padding-top: 20px;
+  }
+  .privacyPolicy_page .description_info:last-child {
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=privacy_policy.css.map */

@@ -1,0 +1,115 @@
+.addressBook_page {
+  .section_block {
+    padding: 30px;
+    border: 1px solid $grayEC;
+    background-color: $grayF0;
+    min-height: 240px;
+  }
+
+  .block_title {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: $black;
+      font-family: $bold;
+      font-size: 120%;
+      line-height: 16px;
+      padding-bottom: 18px;
+    }
+
+    a {
+      color: $siteColor;
+      font-size: 120%;
+
+      &:hover {
+        color: $grayBD;
+        @include animStyle(color 0.5s);
+      }
+    }
+  }
+
+  .phone_number,
+  .address_block,
+  .userName_block {
+    color: $black;
+    font-family: $regular;
+    font-size: 120%;
+    line-height: 16px;
+    padding-bottom: 18px;
+    word-break: break-all;
+  }
+
+  .section_link {
+    color: $blue003;
+    font-family: $bold;
+    font-size: 120%;
+    line-height: 14px;
+    word-break: break-all;
+
+    &:hover {
+      color: $grayBD;
+      @include animStyle(color 0.5s);
+    }
+  }
+
+  .phone_number {
+    padding-bottom: 32px;
+  }
+
+  .add_block {
+    border: 1px solid $grayE5;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: "+";
+      font-size: 220%;
+      color: $grayC0;
+    }
+
+    &:hover {
+      &:before {
+        color: $black;
+        @include animStyle(color 0.5s);
+      }
+    }
+  }
+
+  @media #{$until991}{
+    .book_inner {
+      > div {
+        padding-bottom: 25px;
+      }
+    }
+    @media #{$until767}{
+      .phone_number,
+      .address_block,
+      .userName_block {
+        font-size: 140%;
+        padding-bottom: 10px;
+        line-height: 21px;
+      }
+      .block_title {
+        span {
+          font-size: 140%;
+          line-height: 21px;
+          padding-bottom: 20px;
+        }
+
+        a {
+          font-size: 140%;
+          line-height: 21px;
+        }
+      }
+    }
+    .phone_number {
+      padding-bottom: 20px;
+    }
+    .book_inner {
+      padding-top: 20px;
+    }
+  }
+}

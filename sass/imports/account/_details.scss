@@ -1,0 +1,155 @@
+.details_page {
+  padding-bottom: 20px;
+}
+
+.page_title {
+  padding-top: 30px;
+}
+
+.top_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user_name {
+  color: $black;
+  font-family: $bold;
+  font-size: 120%;
+  font-weight: 900;
+  line-height: 14px;
+}
+
+.profile_list {
+  @extend %standardList;
+  font-family: $regular;
+
+  li {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    position: relative;
+
+    &.active {
+      a {
+        font-family: $black_;
+        color: $black;
+      }
+    }
+  }
+
+  a {
+    font-size: 140%;
+    line-height: 24px;
+    color: $black;
+
+    &:hover {
+      color: $grayD8;
+      @include animStyle(color 0.5s);
+    }
+
+    &.special {
+      color: $siteColor;
+      font-family: $black_;
+    }
+  }
+}
+
+.field_block {
+  margin-bottom: 30px;
+  position: relative;
+
+  input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba($black, 0.1);
+    padding: 0 16px;
+    font-size: 120%;
+    line-height: 14px;
+  }
+
+  .error_hint {
+    margin-top: 2px;
+    right: 10px;
+    left: auto;
+    color: #AF0000;
+  }
+}
+
+.label_text {
+  font-size: 120%;
+  line-height: 18px;
+  margin-bottom: 5px;
+  display: block;
+  font-family: $black_;
+}
+
+.button_block {
+  float: right;
+  padding-top: 28px;
+
+  button {
+    min-width: 200px;
+  }
+}
+
+@media #{$until991}{
+  .field_block {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .button_block {
+    float: inherit;
+    padding: 0;
+
+    button {
+      min-width: inherit;
+      width: 100%;
+    }
+  }
+  .profile_list {
+    li {
+      white-space: inherit;
+    }
+  }
+}
+
+@media #{$until767}{
+  .profile_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+
+    li {
+      white-space: nowrap;
+      height: 30px;
+    }
+
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    a {
+      font-size: 140%;
+      line-height: 18px;
+    }
+  }
+  .form_container {
+    padding-top: 30px;
+  }
+  .field_block {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .user_name {
+    display: none;
+  }
+  .field_block input,
+  .button_block button,
+  .label_text {
+    font-size: 140%;
+  }
+}

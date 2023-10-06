@@ -1,0 +1,603 @@
+.checkout_section .shopping_bag_block {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  border: 1px solid #E5E5E5;
+  background: transparent;
+  height: 100%;
+}
+.checkout_section .shopping_bag_block .shoping_inner_block {
+  width: 100%;
+  position: relative;
+}
+.checkout_section .shopping_bag_block .shoping_container {
+  width: 100%;
+}
+.checkout_section .shopping_bag_block .shoping_bag_list {
+  height: auto;
+  overflow: visible;
+  padding: 0;
+}
+.checkout_section .shopping_bag_block .bottom_block {
+  padding: 35px 0;
+  background: #ffffff;
+  border-top: 1px solid #000000;
+}
+.checkout_section .shopping_bag_block .total_order_block {
+  padding: 0 25px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.checkout_section .shopping_bag_block .total_order_block .inner_title {
+  font-size: 140%;
+  line-height: 21px;
+  font-family: "mardoto-black", "roboto-black";
+}
+.checkout_section .shopping_bag_block .total_order_block .order_sum {
+  font-size: 140%;
+  line-height: 21px;
+  font-family: "mardoto-black", "roboto-black";
+}
+.checkout_section .checkount_inner_section {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout_section .form_container {
+  padding-top: 30px;
+}
+.checkout_section .form_description {
+  font-size: 120%;
+  line-height: 14px;
+  font-family: "mardoto-black", "roboto-black";
+  letter-spacing: 2px;
+}
+.checkout_section .form_block {
+  margin-top: 30px;
+}
+.checkout_section .form_first_container {
+  display: flex;
+}
+.checkout_section .form_first_container .right_block {
+  flex: 1;
+  padding-left: 20px;
+}
+.checkout_section .form_first_container .left_block {
+  flex: 1;
+}
+.checkout_section .product_container {
+  width: 420px;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+.checkout_section .form_container {
+  flex: 1;
+}
+.checkout_section .label_text {
+  font-size: 120%;
+  line-height: 18px;
+  margin-bottom: 5px;
+  display: block;
+  font-family: "mardoto-black", "roboto-black";
+}
+.checkout_section .field_block {
+  margin-bottom: 30px;
+  position: relative;
+}
+.checkout_section .field_block input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 16px;
+  font-size: 120%;
+  line-height: 14px;
+}
+.checkout_section .field_block textarea {
+  resize: none;
+  display: block;
+  height: 80px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 16px;
+  font-size: 120%;
+  line-height: 14px;
+  padding-top: 15px;
+}
+.checkout_section .field_block .error_hint {
+  margin-top: 2px;
+  right: 0;
+  left: auto;
+  color: #AF0000;
+}
+.checkout_section .checkbox_block {
+  max-width: 300px;
+  margin-top: -10px;
+}
+.checkout_section .checkbox_block input[type=checkbox] {
+  display: none;
+}
+.checkout_section .checkbox_block input[type=checkbox]:checked + .icon_check {
+  background: #000000;
+}
+.checkout_section .checkbox_block input[type=checkbox]:checked + .icon_check:before {
+  color: #ffffff;
+  opacity: 1;
+}
+.checkout_section .checkbox_block input[type=checkbox]:checked + .box_title {
+  font-family: "mardoto-bold", "roboto-bold";
+}
+.checkout_section .checkbox_block label {
+  display: flex;
+  align-items: center;
+}
+.checkout_section .checkbox_block span {
+  display: block;
+}
+.checkout_section .checkbox_block .box_title {
+  font-size: 140%;
+  line-height: 21px;
+  margin-left: 10px;
+}
+.checkout_section .checkbox_block .icon_check {
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout_section .checkbox_block .icon_check:before {
+  opacity: 0;
+}
+.checkout_section .delivery_desc {
+  margin-top: 25px;
+}
+.checkout_section .delivery_container {
+  margin-bottom: 42px;
+  margin-top: 20px;
+  display: flex;
+}
+.checkout_section .delivery_container .left_block {
+  flex: 1;
+}
+.checkout_section .delivery_container .right_block {
+  flex: 1;
+  padding-left: 20px;
+}
+.checkout_section .delivery_block {
+  margin-bottom: 20px;
+  display: block;
+  height: 100px;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+.checkout_section .delivery_block input {
+  display: none;
+}
+.checkout_section .delivery_block input:checked + .block_clone {
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+.checkout_section .delivery_block .delivery_title {
+  font-size: 140%;
+  display: flex;
+  font-family: "mardoto-black", "roboto-black";
+  line-height: 16px;
+}
+.checkout_section .delivery_block .delivery_title:before {
+  font-size: 170%;
+  margin-right: 30px;
+  color: #000000;
+  margin-top: 8px;
+}
+.checkout_section .delivery_block .inner_title {
+  font-size: 120%;
+  line-height: 14px;
+  display: block;
+  margin-top: -10px;
+  padding-left: 54px;
+}
+.checkout_section .block_clone {
+  background: #F0F0F0;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.checkout_section .method_list {
+  display: flex;
+  margin-top: 23px;
+}
+.checkout_section .payment_block {
+  margin-right: 20px;
+  height: 100px;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.checkout_section .payment_block .inner_title {
+  font-size: 140%;
+  font-family: "mardoto-bold", "roboto-bold";
+  line-height: 16px;
+  color: #000000;
+}
+.checkout_section .payment_block input {
+  display: none;
+}
+.checkout_section .payment_block input:checked + .block_clone {
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+.checkout_section .bottom_section_order {
+  margin-top: 100px;
+  padding: 40px 0;
+  background: #F0F0F0;
+}
+.checkout_section .bottom_section_order .custom_container {
+  padding-right: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout_section .total_order {
+  font-size: 140%;
+  line-height: 21px;
+  color: #A90000;
+  font-family: "mardoto-black", "roboto-black";
+  margin-bottom: 15px;
+}
+.checkout_section .content_description {
+  font-size: 140%;
+  color: #000000;
+  line-height: 16px;
+}
+.checkout_section .content_description a {
+  color: #000000;
+  text-decoration: underline;
+  white-space: nowrap;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.checkout_section .button_block {
+  width: 190px;
+  margin-left: 30px;
+}
+.checkout_section .first_line_block {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.checkout_section .sign_in_link {
+  font-size: 140%;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.checkout_section .sign_in_link a {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #0030F2;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "mardoto-bold", "roboto-bold";
+}
+.checkout_section .sign_in_link a:before {
+  color: #0030F2;
+  margin-right: 7px;
+}
+.checkout_section .sign_in_link a:hover {
+  opacity: 0.5;
+}
+.checkout_section .review_btn {
+  font-size: 140%;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "mardoto-bold", "roboto-bold";
+  border: 1px solid #E2E2E2;
+  color: #000000;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 50px;
+  width: 100%;
+  display: none;
+}
+.checkout_section .review_btn:hover {
+  background: #D6D6D6;
+  color: #333333;
+}
+.checkout_section .page_title {
+  padding-bottom: 0;
+}
+.checkout_section .review_close {
+  display: none;
+  justify-content: flex-end;
+  color: #000000;
+  font-size: 140%;
+  margin: 20px;
+}
+.checkout_section .checkout_success_popup {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: 101;
+  overflow: hidden;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background: rgba(0, 0, 0, 0.2);
+}
+.checkout_section .checkout_success_popup .popup_inner {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  max-height: 480px;
+  background: #ffffff;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout_section .checkout_success_popup .popup_inner_container {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.checkout_section .checkout_success_popup .icon_check {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.checkout_section .checkout_success_popup .icon_check::before {
+  font-size: 180%;
+}
+.checkout_section .checkout_success_popup .popup_title {
+  font-size: 140%;
+  line-height: 21px;
+  margin-top: 20px;
+  font-weight: "mardoto-black", "roboto-black";
+}
+.checkout_section .checkout_success_popup .popup_desc {
+  margin-top: 5px;
+  font-size: 120%;
+  line-height: 17px;
+}
+.checkout_section .checkout_success_popup .success_close {
+  display: none;
+}
+.checkout_section .checkout_success_popup .continue_btn {
+  margin-top: 45px;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #ffffff;
+  font-family: "mardoto-black", "roboto-black";
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.checkout_section .checkout_success_popup .continue_btn:hover {
+  background: #333333;
+  color: #D6D6D6;
+}
+
+.success_opened {
+  overflow: hidden;
+}
+.success_opened .checkout_success_popup {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+@media (max-width: 1440px) {
+  .checkout_section .checkout_success_popup {
+    padding: 20px;
+  }
+  .checkout_section .checkout_success_popup .popup_inner {
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    max-height: 380px;
+  }
+}
+@media (max-width: 1199px) {
+  .checkout_section .payment_block {
+    width: 100%;
+    max-width: 250px;
+  }
+  .checkout_section .payment_block:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .checkout_section .product_container {
+    width: 370px;
+  }
+  .checkout_section .delivery_container {
+    flex-direction: column;
+  }
+  .checkout_section .delivery_container .right_block {
+    padding-left: 0;
+  }
+  .checkout_section .method_list {
+    flex-direction: column;
+  }
+  .checkout_section .method_list label {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+  .checkout_section .method_list label:last-child {
+    margin-bottom: 0;
+  }
+  .checkout_section .bottom_section_order .custom_container {
+    padding-right: 40px;
+  }
+  .checkout_section .form_first_container {
+    flex-direction: column;
+  }
+  .checkout_section .form_first_container .right_block {
+    padding-left: 0;
+  }
+  .checkout_section .first_line_block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .checkout_section .sign_in_link {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .checkout_review_opened {
+    overflow: hidden;
+  }
+  .checkout_review_opened .checkout_section .product_container {
+    bottom: 0;
+  }
+
+  .checkout_section .shopping_bag_block .product_block .image_block {
+    position: relative;
+    width: 25%;
+  }
+  .checkout_section .product_container {
+    padding-top: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    top: 90px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #ffffff;
+    z-index: 5;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .checkout_section .review_close {
+    display: flex;
+  }
+  .checkout_section .review_btn {
+    display: flex;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .checkout_section .bottom_section_order {
+    margin-top: 50px;
+  }
+  .checkout_section .bottom_section_order .custom_container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .checkout_section .button_block {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .checkout_section .button_block button {
+    width: 100%;
+  }
+}
+@media (max-width: 399px) {
+  .checkout_section .checkout_success_popup {
+    padding: 0;
+  }
+  .checkout_section .checkout_success_popup .popup_inner {
+    max-width: none;
+    max-height: none;
+  }
+  .checkout_section .checkout_success_popup .popup_inner_container {
+    position: static;
+  }
+  .checkout_section .checkout_success_popup .continue_btn {
+    position: absolute;
+    bottom: 45px;
+  }
+  .checkout_section .checkout_success_popup .success_close {
+    display: block;
+    position: absolute;
+    color: #000000;
+    top: 30px;
+    right: 30px;
+    font-size: 140%;
+  }
+  .checkout_section .shopping_bag_block .bottom_block {
+    padding: 35px 20px;
+  }
+  .checkout_section .shopping_bag_block .total_order_block {
+    padding: 0;
+  }
+}
+.checkout_section .content_description a:hover, .checkout_section .review_close:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=checkout.css.map */

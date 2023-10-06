@@ -1,0 +1,265 @@
+.about_page {
+  padding-top: 80px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 860px;
+  width: 100%;
+
+  .about_title {
+    color: $black;
+    font-family: $bold;
+    font-size: 600%;
+    letter-spacing: 5px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .inner_title {
+    color: $black;
+    font-family: $regular;
+    font-size: 180%;
+    letter-spacing: 2px;
+    line-height: 27px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .about_img_block {
+    img {
+      width: 100%;
+    }
+  }
+
+  .info_block {
+    display: flex;
+    padding-top: 40px;
+    max-width: 860px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  .block_title {
+    color: $black;
+    font-family: $bold;
+    font-size: 180%;
+    letter-spacing: 3px;
+    line-height: 22px;
+    text-align: left;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .block_description {
+    color: $black;
+    font-family: $regular;
+    font-size: 140%;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 21px;
+    max-width: 420px;
+    width: 100%;
+    padding-right: 70px;
+  }
+}
+
+.slider_content {
+  width: 224px;
+
+  &:before {
+    font-size: 420%;
+  }
+
+  .city_block {
+    color: $black;
+    font-family: $bold;
+    font-size: 140%;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding-top: 55px;
+    position: relative;
+    &:before{
+      position: absolute;
+      font-size: 32px;
+      top: 0;
+    }
+    &:hover{
+      opacity: 0.5;
+      @include animStyle(opacity 0.5s);
+    }
+  }
+
+  .street_block {
+    color: $black;
+    font-family: $regular;
+    font-size: 140%;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding-top: 10px;
+  }
+
+  .week_days {
+    padding-top: 10px;
+    color: $grayB0;
+    font-family: $regular;
+    font-size: 120%;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+
+.location_block {
+  background-color: rgba(251, 230, 241, 0.6);
+  padding: 200px 0 80px 0;
+  margin: -100px 0 0 0;
+
+  .slider_inner {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .slider_content {
+      width: 33%;
+      padding: 55px 20px;
+    }
+
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-size: 0;
+    color: $grayD8;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    border: 1px solid $black;
+    border-radius: 50%;
+    background: transparent;
+    @extend %iconElement;
+    @extend %all300;
+
+    &:hover {
+      border: 2px solid $black;
+      @include animStyle(border 0.9s);
+    }
+
+    &:before {
+      display: block;
+      content: "\e902";
+      font-size: 1rem;
+      color: $black;
+    }
+
+    &.slick-prev {
+      left: 50%;
+      @extend %verticalRotate;
+      margin-left: -80px;
+    }
+
+    &.slick-next {
+      right: 50%;
+      margin-right: -80px;
+    }
+  }
+}
+
+.pagingInfo {
+  font-family: $regular;
+  color: $black;
+  font-size: 140%;
+  letter-spacing: 0;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+@media #{$until991} {
+  .about_page {
+    padding-top: 40px;
+
+    .about_title {
+      font-size: 420%;
+      line-height: 52px;
+      letter-spacing: 4px;
+    }
+
+    .inner_title {
+      letter-spacing: 2px;
+      line-height: 24px;
+      font-size: 160%;
+      padding-bottom: 40px;
+    }
+
+    .info_block {
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100%;
+      padding-bottom: 40px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    .block_title {
+      max-width: 100%;
+      padding-bottom: 40px;
+    }
+
+    .block_description {
+      padding-right: 0;
+      max-width: 100%;
+    }
+
+    .about_img_block {
+      &:last-child {
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+    }
+  }
+  .location_block {
+    .slick-arrow {
+      border: 1px solid rgba($black, 0.1);
+
+      &:before {
+        content: "\e90e";
+      }
+
+      &.slick-prev {
+        margin-left: -100px;
+      }
+
+      &.slick-next {
+        margin-right: -100px;
+      }
+    }
+  }
+  .pagingInfo {
+    font-size: 160%;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+
+@media #{$until479} {
+  .location_block {
+    margin: -50px 0 0 0;
+    padding: 110px 0 48px 0;
+  }
+}
+

@@ -1,0 +1,188 @@
+//.section_recently,
+//.arrivals_slider {
+//  @include slider();
+//
+//  .slide_block {
+//    @include slide();
+//    vertical-align: top;
+//    width: 25%;
+//    padding: 0 10px;
+//    position: relative;
+//
+//    &.hovered {
+//      .product_image img {
+//        opacity: 0.7;
+//      }
+//
+//      .product_name {
+//        opacity: 0.7;
+//      }
+//    }
+//  }
+//
+//  .product_image {
+//    display: block;
+//    @extend %standardNarrow;
+//    background: $gray630;
+//
+//    img {
+//      @extend %opacity300;
+//    }
+//  }
+//
+//  .product_price {
+//    font-size: 120%;
+//    line-height: 18px;
+//    margin-top: 20px;
+//    letter-spacing: 1px;
+//    color: $black;
+//    font-family: $black_;
+//  }
+//
+//  .product_name {
+//    height: 36px;
+//    @include overHidden();
+//    display: inline-block;
+//    vertical-align: top;
+//    font-size: 140%;
+//    line-height: 18px;
+//    color: $black;
+//    font-family: $regular;
+//    @extend %color300;
+//    margin-top: 1px;
+//  }
+//
+//  .color_block {
+//    display: flex;
+//    padding-top: 10px;
+//  }
+//
+//  .color_product {
+//    height: 14px;
+//    width: 14px;
+//    border: 1px solid $grayDC;
+//    border-radius: 7px;
+//    background-color: transparent;
+//    margin: 0 10px 0 0;
+//  }
+//
+//  .slick-arrow {
+//    position: absolute;
+//    border: none;
+//    top: 50%;
+//    margin-top: -55px;
+//    color: $black33;
+//    padding: 0;
+//    height: 50px;
+//    width: 50px;
+//    background-color: $white;
+//    z-index: 3;
+//    @extend %color300;
+//
+//    &.slick-prev {
+//      left: 10px;
+//      @extend %verticalRotate;
+//    }
+//
+//    &.slick-next {
+//      right: 10px;
+//    }
+//
+//    &:before {
+//      display: block;
+//      font-size: 2rem;
+//      content: "\e902";
+//      @extend %iconElement;
+//    }
+//
+//    &:hover {
+//      color: $siteColor;
+//    }
+//  }
+//
+//  .add_to_wish {
+//    position: absolute;
+//    right: 40px;
+//    top: 30px;
+//    z-index: 9;
+//
+//    &:before {
+//      font-size: 220%;
+//      color: $black;
+//    }
+//  }
+//}
+//
+//.section_recently {
+//  .recently_slider {
+//    display: flex;
+//    justify-content: center;
+//
+//    .slide_block {
+//      width: 21%;
+//    }
+//  }
+//}
+//
+//@media #{$until991} {
+//  .arrivals_section {
+//    padding-top: 40px;
+//  }
+//  .arrivals_slider {
+//    .slide_block {
+//      width: 50%;
+//    }
+//
+//    .color_product {
+//      height: 24px;
+//      width: 24px;
+//      border-radius: 50px;
+//    }
+//  }
+//
+//}
+//
+//@media #{$until399} {
+//  .section_recently,
+//  .arrivals_slider {
+//    .slick-arrow {
+//      height: 36px;
+//      width: 36px;
+//
+//      &:before {
+//        font-size: 1rem;
+//      }
+//    }
+//  }
+//}
+//
+//.slider_web_arrow {
+//  .slick-arrow {
+//    &.slick-prev {
+//      left: -50px;
+//      opacity: 0;
+//      @extend %verticalRotate;
+//      @include animStyle(all 0.5s);
+//    }
+//
+//    &.slick-next {
+//      right: -50px;
+//      @include animStyle(all 0.5s);
+//      opacity: 0;
+//    }
+//  }
+//
+//  &:hover {
+//    .slick-arrow.slick-prev {
+//      left: 10px;
+//      opacity: 1;
+//      @include animStyle(all 0.5s);
+//    }
+//
+//    .slick-arrow.slick-next {
+//      right: 10px;
+//      opacity: 1;
+//      @include animStyle(all 0.5s);
+//    }
+//  }
+//}
