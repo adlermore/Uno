@@ -166,12 +166,13 @@
   font-size: 1rem;
   color: #000000;
 }
-.location_block .slick-arrow.slick-prev {
+.location_block {
   left: 50%;
+}
+.location_block .slick-arrow.slick-prev {
   margin-left: -80px;
 }
 .location_block .slick-arrow.slick-next {
-  right: 50%;
   margin-right: -80px;
 }
 
